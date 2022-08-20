@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "simple-pypackage"
+dynamic = ["version"]
+description = "A package that will change the world"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  {name="Michael Karamuth", email="michael@confuzeus.com"}
+]
+keywords = [
+  "something",
+  "something else"
+]
+classifiers = [
+  "Development Status :: 1 - Planning"
+]
+dependencies = [
+  "click>=7"
+]
+
+[project.optional-dependencies]
+dev = [
+  "Sphinx",
+  "black",
+  "flake8",
+  "isort",
+  "hatch",
+  "pip-tools"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/confuzeus/simple-pypackage"
+"Bug Tracker" = "https://github.com/confuzeus/simple-pypackage/issues"
+
+[tool.hatch.version]
+path = "src/simple_pypackage/__init__.py"
