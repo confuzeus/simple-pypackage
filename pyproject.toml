@@ -17,7 +17,8 @@ keywords = [
   "something else"
 ]
 classifiers = [
-  "Development Status :: 1 - Planning"
+  "Development Status :: 1 - Planning",
+  "License :: OSI Approved :: MIT License",
 ]
 dependencies = [
   "click>=7"
