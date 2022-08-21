@@ -40,3 +40,8 @@ dev = [
 
 [tool.hatch.version]
 path = "src/simple_pypackage/__init__.py"
+
+[tool.hatch.build]
+packages = [
+  "src/simple_pypackage"
+]
