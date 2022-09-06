@@ -4,7 +4,7 @@
 	version-patch version-minor version-major
 
 install-requirements:
-	pip install -r requirements/base.txt -r requirements.dev.txt
+	pip install -r requirements/base.txt -r requirements/dev.txt
 	pip install -e .
 
 compile-requirements:
